@@ -42,4 +42,4 @@ These understandings will influence the way I read the BlaBla community hub brie
 
 To summarise my learning from the first five weeks, I drew this closed-loop diagram to show how I currently understand a web application.
 
-![Hand-drawn Web app system flow diagram](https://yufeiliu693.github.io/deco2017-blog/assets/images/web-app-system-diagram.png)
+![Hand-drawn Web app system flow diagram](https://raw.githubusercontent.com/yufeiliu693/deco2017-blog/main/assets/images/web-app-system-diagram.png)
