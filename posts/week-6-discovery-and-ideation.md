@@ -10,9 +10,8 @@ tags:
 ---
 # Week 6: Discovery and Ideation
 
-Before starting DECO2017, my understanding of the website was rather superficial. I usually regarded the website as a collection of pages, such as the home page, buttons, images, navigation bar and text layout. That is to say, I focused more on what the users could see, what they could click, and whether the page looked clear. However, after the first five weeks of lectures, I began to realize that a web application is not just a "viewable web page", but a system that receives user actions, processes data, and then gives feedback. 
 
-Before DECO2017, my understanding of websites was surface-level. I saw a website as pages: a homepage, buttons, images, a navigation bar, and text layout. I focused on what users could see, click, and whether the page looked clear. After the first five weeks, I realised that a web application is not just a “viewable web page”, but a system that receives user actions, processes data, and gives feedback.
+Before starting DECO2017, my understanding of the website was rather superficial. I usually regarded the website as a collection of pages, such as the home page, buttons, images, navigation bar and text layout. That is to say, I focused more on what the users could see, what they could click, and whether the page looked clear. However, after the first five weeks of lectures, I began to realize that a web application is not just a "viewable web page", but a system that receives user actions, processes data, and then gives feedback. 
 
 Week 1 made me realise that this course does not expect us to become full-stack developers immediately. Instead, it wants designers to understand the relationship between the front-end and back-end. Previously, I thought that if the interface was designed well, the rest could be left to developers. Now I think that without understanding how the system operates, the functions I design might be empty. They may look like functions, but may not consider where data comes from, how input is processed, what the server does, or whether they can be implemented.
 
