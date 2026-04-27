@@ -1,10 +1,10 @@
 ---
-title: Week 6 - Discovering a Community for the BlaBla Brief
+title: Week 6 - Exploring the Community web app system
 date: 2026-04-26
 author: Yufei Liu
-summary: This post reflects on our early ideation process for the DECO2017 A2 project and how we began choosing a community to design for.
+summary: In this post, I reflect on how my understanding of websites changed from simple pages to a connected web app system.
 tags:
-  - discovery
+  - database
   - ideation
   - community
 ---
@@ -42,4 +42,4 @@ These understandings will influence the way I read the BlaBla community hub brie
 
 To summarise my learning from the first five weeks, I drew this closed-loop diagram to show how I currently understand a web application.
 
-![Hand-drawn Web app system flow diagram](/assets/images/Hand_drawing_web_app_system.jpg)
+![Hand-drawn Web app system flow diagram](https://yufeiliu693.github.io/deco2017-blog/assets/images/web-app-system-diagram.png)
