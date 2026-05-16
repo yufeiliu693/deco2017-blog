@@ -2,44 +2,36 @@
 title: Week 6 - Exploring the Community web app system
 date: 2026-04-26
 author: Yufei Liu
-summary: In this post, I reflect on how my understanding of websites changed from simple pages to a connected web app system.
+summary: This blog explains how our group understood the project brief, compared early ideas, and finally chose the Medical Help Task Platform. Through concept comparison, user research, pain point analysis, and early risk thinking, we narrowed the project from a broad idea into a focused web app direction for Chinese international students in Sydney.
 tags:
-  - database
-  - ideation
-  - community
+  - User Researchse
+  - Concept Selection
+  - Medical Help Platform
 ---
 # Week 6: Discovery and Ideation
 
+# Part One: Project Background and Brief Understanding
 
-Before starting DECO2017, my understanding of the website was rather superficial. I usually regarded the website as a collection of pages, such as the home page, buttons, images, navigation bar and text layout. That is to say, I focused more on what the users could see, what they could click, and whether the page looked clear. However, after the first five weeks of lectures, I began to realize that a web application is not just a "viewable web page", but a system that receives user actions, processes data, and then gives feedback. 
+I understand that the purpose of this briefing is to require us to develop a genuine network application for a specific community, rather than merely creating a website with information. We need to identify a clear problem, determine the actual needs of the users, identify the core functional requirements, and explain why each design decision can help users complete tasks more clearly, safely and understandably when using the website program.
 
-Week 1 made me realise that this course does not expect us to become full-stack developers immediately. Instead, it wants designers to understand the relationship between the front-end and back-end. Previously, I thought that if the interface was designed well, the rest could be left to developers. Now I think that without understanding how the system operates, the functions I design might be empty. They may look like functions, but may not consider where data comes from, how input is processed, what the server does, or whether they can be implemented.
+# Part Two: Comparison and Selection of Early Concepts
 
-Week 2’s content about TypeScript and input handling gave me a new understanding of “user input”. Previously, I thought input boxes were just components for names, comments, or searches. Now I know user input is crucial because users may enter incorrect formats, empty content, or unsafe content. The system cannot simply trust user input. It needs to check whether the input is correct, reasonable, and safe. This also made me consider prompts, restrictions, error feedback, and system responses to mistakes.
+At the beginning, we did not choose the Medical Help Task Platform directly. Our group first discussed several possible directions, but we realised that choosing only by personal interest was not enough. So we made a Concept Comparison Matrix to help us compare each idea more clearly and fairly. The table allowed us to check each concept through specific criteria, such as user problem, brief fit, task-oriented structure, community value, database feasibility, MVP scope, and team confidence. Through this process, we found that some ideas were meaningful but too broad, too generic, or difficult to control. The medical help platform became our final choice because it had a clear user group, a real problem, and a manageable MVP direction.
 
-Week 3 gave me a clearer understanding of the server’s role. Through Mojo.js, routes, and HTTP request/response, I began to view web pages as a “conversation”. The browser sends requests, and the server returns content based on paths and situations. A page is not necessarily fixed HTML. It can be generated based on user behaviour and data.
+# Part Three: User Research and Problem Analysis
 
-In Week 4, database and SQL concepts made me realise that a web app needs “memory”. If users post, save, comment, or search, these contents need to be stored and found later. Every interface function may need a matching data structure.
+Then choosing the medical help direction, we did user research to check whether this problem really existed. We used online ethnography because we wanted to see what students were already asking in real situations. We also used a short survey because we needed to confirm these problems with our own target users. From Reddit comments and 25 survey responses, we found that students were confused about where to go when sick, how OSHC works, what medical costs mean, and how to claim money back. This helped us decide that the website should not just provide general information. It should give users clear steps, explain costs and insurance, show useful places, and include peer experience cards.
 
-Week 5 connected the previous knowledge. Every user action on a webpage might relate to the server and database. When a user submits a form, the system may send the information to the server and save it. GET means fetching information from the server, while POST means delivering new information to it. HTMX showed me that updates do not always require reloading the whole page. For example after a user submits a comment, the system can update that section, so users see results quickly and know the system has responded. 
+Based on the research, we made a User Pain Point Analysis table to understand what these problems actually meant for users. From this table, we found that students’ difficulties were not random. They mainly came from information access, decision making, lack of local knowledge, experience gaps, and low confidence. This showed us that our website should not simply collect medical information. It needed to guide users through clear first steps, explain where to go, show trusted places, and use peer experiences to reduce uncertainty. We also redefined our target users as Chinese international students newly arrived in Sydney. This helped us keep the later website focused on their real situation, language needs, and first-time medical experience.
 
+# Part Four: Transforming Problems into Design Opportunities and Early Risks and Unknown Factors
 
-## My Current Understanding of Web Applications 
+With the pain points defined, we changed each problem into a design opportunity. This helped us move from “what users struggle with” to “what the platform should actually provide.” For example, if students do not know the first step, the website needs a step-by-step guide. We also communicated early risks, such as medical accuracy, privacy, and MVP scope. Considering these risks, we  will made the platform more careful. We added a clear medical disclaimer, avoided giving medical diagnosis, kept emergency information visible, made place information simple, and used peer experiences only as reference. We have to contral MVP scope. This can help user complete a clear, feasible and low-stress medical assistance task path.
 
-| Step | What happened in the system | My understanding as a designer |
-|---|---|---|
-| 1 | Users operate on the interface | The interface guides users to complete an action |
-| 2 | The browser sends a request | The user's action becomes a message sent to the server |
-| 3 | The server routes and processes the request | The system determines what to do next |
-| 4 | The database searches or saves data | The application remembers and organizes the information generated by the user |
-| 5 | The server returns the result | The system sends the processing result back to the browser |
-| 6 | The interface is updated | Users see the feedback and know if the operation was successful |
+# Personal Reflection
 
-These understandings will influence the way I read the BlaBla community hub brief in the future. Now, I won't immediately ask "How many pages should we create?" Instead, I will first ask: What tasks do the users need to complete? What information does the system need to handle? Which functions are truly necessary for this prototype? Which functions are realistically feasible given our current time and technical capabilities?
+This project actually originated from a real problem I encountered during my study in Australia. When I was ill, sometimes I would think about taking painkillers first and enduring it for a while, as if seeing a doctor wasn't necessary and I could get through it. But later, I realized that this was not a truly safe or effective solution. Also, precisely because of this, I myself am one of the target users of this website. This project was not conceived out of thin air; rather, it was derived from the real problems I experienced in my daily life. Through continuous discussions with the team members, we identified the future direction of the project.
 
+# Division of labor
 
-## My Current Understanding of a Web App System
-
-To summarise my learning from the first five weeks, I drew this closed-loop diagram to show how I currently understand a web application.
-
-![Hand-drawn Web app system flow diagram](https://raw.githubusercontent.com/yufeiliu693/deco2017-blog/main/assets/images/web-app-system-diagram.png)
+Joint discussion and finalization. I am responsible for creating Charts 2 & 3, while Yuxi is responsible for creating Charts 1 & 4.
