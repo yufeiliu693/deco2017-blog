@@ -313,14 +313,12 @@ article blockquote {
   color: var(--muted);
 }
 
-/* Important: limit images inside blog posts */
+/* Blog post images: keep original ratio and adapt to article width */
 article img {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
-  max-height: 720px;
-  object-fit: contain;
   margin: 1.5rem auto;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
@@ -384,8 +382,5 @@ hr {
   h1 {
     font-size: clamp(2.1rem, 12vw, 3.5rem);
   }
-
-  article img {
-    max-height: 560px;
-  }
+  
 }

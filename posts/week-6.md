@@ -1,5 +1,5 @@
 ---
-title: Week 6 - Exploring the Community web app system
+title: Exploring the Community web app system
 date: 2026-04-11
 author: Yufei Liu
 summary: This blog explains how our group understood the project brief, compared early ideas, and finally chose the Medical Help Task Platform. Through concept comparison, user research, pain point analysis, and early risk thinking, we narrowed the project from a broad idea into a focused web app direction for Chinese international students in Sydney.
