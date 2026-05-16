@@ -10,7 +10,7 @@ tags:
 ---
 ## Course learning gains
 
-In the 9th week, I began to understand that database design should be based on pages and user processes, rather than directly derived from the code. It should be determined through our wireframes and flowcharts. This made me realize that the database is not just a place to store content; it should support user operations and function realization.
+In the week 9, I began to understand that database design should be based on pages and user processes, rather than directly derived from the code. It should be determined through our wireframes and flowcharts. This made me realize that the database is not just a place to store content; it should support user operations and function realization.
 
 ## Part 1: Identifying Data, Initial DDD Data Definitions and ERD
 ![](assets/images/4.1.png)

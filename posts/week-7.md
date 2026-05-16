@@ -10,7 +10,7 @@ tags:
 ---
 ## Course learning gains
 
-At the 7th week, we hope that this platform can support actual medical tasks. I will consider it as a web application. It should not only display information but also guide users through the task steps and respond to users' questions.
+At the week 7, we hope that this platform can support actual medical tasks. I will consider it as a web application. It should not only display information but also guide users through the task steps and respond to users' questions.
 
 ## Part 1: Extracting User Tasks and Defining Function Hierarchies
 ![](assets/images/2.1.png)

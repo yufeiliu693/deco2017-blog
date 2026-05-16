@@ -10,7 +10,7 @@ tags:
 ---
 ## Course learning gains
 
-In the 8th week, I realized that our web application needed to adopt a modular design. Before this, we had already regarded task cards, location cards, peer experience cards and question cards as important functions. So the next step is to use the modular design approach to create shared layouts, partial views and reusable components. This will help us complete the network setup more efficiently, facilitate website maintenance and enable better teamwork within our team.
+In the week 8, I realized that our web application needed to adopt a modular design. Before this, we had already regarded task cards, location cards, peer experience cards and question cards as important functions. So the next step is to use the modular design approach to create shared layouts, partial views and reusable components. This will help us complete the network setup more efficiently, facilitate website maintenance and enable better teamwork within our team.
 
 ## Part 1: Layout and Wireframes
 ![](assets/images/3.1.png)

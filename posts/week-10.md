@@ -10,7 +10,7 @@ tags:
 ---
 ## Course learning gains
 
-In the 10th week, I realized that our web application couldn't merely focus on the page design aspect. We needed to integrate the pages, user flows, routes, controllers, SQLite database, and some views into a usable prototype. When users perform actions on the page (such as searching, posting, saving, liking, and commenting), these actions will be transformed into server requests. Then the system will read or update the data and return the page.
+In the week 10, I realized that our web application couldn't merely focus on the page design aspect. We needed to integrate the pages, user flows, routes, controllers, SQLite database, and some views into a usable prototype. When users perform actions on the page (such as searching, posting, saving, liking, and commenting), these actions will be transformed into server requests. Then the system will read or update the data and return the page.
 
 ## Part 1: Database Reading, User Operations and System Responses
 ![](assets/images/5.1.png)

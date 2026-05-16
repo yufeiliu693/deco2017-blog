@@ -10,7 +10,7 @@ tags:
 ---
 ## Course learning gains
 
-In the 11th week, I learned that after completing the prototype, we still needed to check whether it was technically feasible and whether real users could complete the tasks without confusion. This meant we had to test the routes, database operations and HTMX updates, and also observe the users' performance through task-based tests and "meditative tests" to identify the problems they encountered during actual operations. And when collecting more private data from users in the future, we must pay attention to protecting user privacy.
+In the week 11, I learned that after completing the prototype, we still needed to check whether it was technically feasible and whether real users could complete the tasks without confusion. This meant we had to test the routes, database operations and HTMX updates, and also observe the users' performance through task-based tests and "meditative tests" to identify the problems they encountered during actual operations. And when collecting more private data from users in the future, we must pay attention to protecting user privacy.
 
 ## Part 1: Final Function Selection and Implementation
 
