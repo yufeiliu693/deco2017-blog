@@ -61,3 +61,11 @@ ul.tags-list {
 ul.post-list{
     list-style: none;
 }
+
+/* Responsive images for blog posts */
+main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
