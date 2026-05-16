@@ -115,7 +115,7 @@ main {
   border-radius: var(--radius-lg);
   background: rgba(255, 253, 248, 0.96);
   box-shadow: var(--shadow);
-  overflow: visible;
+  overflow: hidden;
 }
 
 /* Typography */
@@ -314,14 +314,13 @@ article blockquote {
   color: var(--muted);
 }
 
-/* Blog post images: wider responsive display for diagrams and long screenshots */
+/* Blog post images: responsive inside the article box */
 article img {
   display: block;
-  width: min(92vw, 1180px);
-  max-width: none;
+  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin: 2rem 50%;
-  transform: translateX(-50%);
+  margin: 1.8rem auto;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--paper-strong);
@@ -386,8 +385,9 @@ hr {
   }
 
   article img {
-    width: calc(100vw - 1rem);
-    margin: 1.5rem 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
   }
 }
