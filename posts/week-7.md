@@ -10,28 +10,33 @@ tags:
 ---
 ## Course learning gains
 
-In Week 7, we already wanted the platform to support a real medical task. Week 7 helped me understand this idea more clearly as a web app. It should not only show information, but also guide user actions through task steps, place cards, save buttons, questions, and system responses.
+At the 7th week, we hope that this platform can support actual medical tasks. I will consider it as a web application. It should not only display information but also guide users through the task steps and respond to users' questions.
 
 ## Part 1: Extracting User Tasks and Defining Function Hierarchies
 ![](assets/images/2.1.png)
 
-For this part, we turned our earlier research and pain point analysis into clearer user tasks and functional requirements, so we made Tasks & Core Functional Requirements Table. Then we needed to know which functions must be built first, so we made another table to Compare core functions and optional functions. From the table, we learned that task entry, task detail, step-by-step path, place cards, and peer experience cards are core MVP functions. Other ideas, like real-time chat, map API, badges, and smart recommendations, can be future features. This helped our later website stay focused, realistic, and easier to build.
+In this section, we transformed the previous research results and pain points analysis into more clear user tasks and functional requirements. First, we identified the core functions of the website: assessing the situation, selecting the corresponding Task for the problem, viewing Peer experiences, finding the target location, saving useful information, and participating in community discussions. 
+
+After, we compare the core functions and optional features. Through the analysis of the table, we learned that task entry, task details, step-by-step paths, location cards, and companion experience cards are the core minimum viable product functions. Other ideas, such as real-time chat, map API, badges, and intelligent recommendations, can be considered as future features. This helps our initial MVP to stay focused.
 
 ## Part 2: Overall Page Structure of the Website
 ![](assets/images/2.2.png)
 
-With the core user tasks confirmed, we started planning the website structure. We did not organise pages like a normal website. Instead, we mapped pages from the user’s action path. This helped us decide what each page should do, such as task entry, community posts, place search, publishing, and settings. It made the next design stage clearer and more focused.
+After determining the core user tasks, we began to plan the structure of the website. We planned the pages based on the user's operation path. The home page serves as the starting point of the entire system, guiding users to the main functional pages such as the community, address, posting, and settings. The community page is used for browsing and searching for peer experiences, while the post detail page further supports reading the complete content. The posting page allows users to share their medical experiences. The address page helps users quickly find GP, pharmacies, and emergency-related locations. The plan is designed to allow users to view specific locations by opening it on Google map. The settings page centrally manages personal information, saved locations, posted content, and interaction records.
 
 ## Part 3: Website Flow and Response to User Actions
 ![](assets/images/2.3.png)
 
-Before building the website, we tested the logic through a user flow. We did this because page structure alone could not show whether the user’s actions were consistent. We wanted to check the whole process when a user logs in, enters the task page, filters community posts, opens a post, saves a place, asks a question, or returns to another page. Then we made the wire flow to helped us see the connection between screens and actions more clearly. From this process, we found which pages needed buttons, feedback, and clear return paths. This helped our next building stage avoid broken or confusing user journeys.
+Before building the website, we tested its logic using wire flow. We did this because merely planning the page structure does not indicate whether the user's actual operations are consistent. Wireframes help us clearly see the relationship between the screen and the operation. For example, when a user clicks on a post in the community, they will be redirected to the detail page. Through this process, we determined which pages require buttons, feedback, and clear return paths.
 
 ## Personal Reflection
 
-In Week 7, we made a trade-off here. We did not include every possible feature in the MVP. Some functions, such as full medical records, complex chat, and smart recommendations, were useful but too large. So we kept the core pathway: task entry, peer experience, place search, save place, and basic questions.
+I think the most challenging part lies in transforming a broad idea into a clear network application process. It involves determining what the user should do on each page and ensuring that different pages are interconnected without confusing the user. We discussed multiple versions with my team members, and we drew many messy sketches on paper to clarify the logic. Due to the excessive complexity, we did not include it in the blog. However, through repeated discussions and user process simulations, the final idea became very clear.
 
-I think the most difficult part was turning a broad idea into a clear web app flow. As a beginner, it was not hard to imagine pages, but it was harder to decide what the user does on each page, what the system should show next, and how different pages connect without making users confused. During this process, I and my team members discussed multiple times. I and my team members discussed several versions. The content of our discussions was not limited to how various functions should be divided onto appropriate pages, and setting appropriate buttons on each page to jump to the next page, etc. That early ideas were only messy sketches on paper, so we did not include them in the blog. But through repeated discussion and user-flow simulation, the final diagram became clearer. I found that when we explained ideas to each other, logic problems appeared quickly.
+### Core design decisions:
+1. We organized the user's core medical assistance process into a complete operational path, and based on this, determined the main page structure of the website.
+
+2. We separated the MVP functions from the secondary functions, and prioritized retaining the task entry, peer experience, location search, location saving, and basic inquiries that can directly support the core tasks.
 
 ### Division of labor
 Conducted discussions and reached a consensus. I am responsible for creating Chart 1, while Yuxi is responsible for creating Chart 2, and Chart 3 was created jointly by us.

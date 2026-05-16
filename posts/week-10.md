@@ -2,7 +2,7 @@
 title: Connecting Implementation, Deployment and Maintenance
 date: 2026-05-10
 author: Yufei Liu
-summary: This blog explains how Sydney Life Aid moved from page design into a runnable prototype. I focused on how user actions connect with routes, controllers, SQLite data, GET / POST logic, and system responses. I also reflected on deployment limits, API trade-offs, security, repeated database actions, and maintenance decisions that make the prototype safer and more stable.
+summary: This blog article provides a detailed account of how the Sydney Life Aid Organization transformed the page design into a functional prototype. In this study, we focused on discussing aspects such as deployment limitations, API selection, security, repetitive database operations, and maintenance decisions through user operations. These factors have made this prototype more secure and stable.
 tags:
   - Implementation
   - Deployment
@@ -10,12 +10,14 @@ tags:
 ---
 ## Course learning gains
 
-In the 10th week, I realized that our web application couldn't merely focus on the page design level. We needed to integrate the pages, user flows, routes, controllers, SQLite database and some views into a usable prototype. When users operate on the page (such as searching, posting, saving, liking and commenting), it will be transformed into a server request. Then the system will read or update the data and return the page.
+In the 10th week, I realized that our web application couldn't merely focus on the page design aspect. We needed to integrate the pages, user flows, routes, controllers, SQLite database, and some views into a usable prototype. When users perform actions on the page (such as searching, posting, saving, liking, and commenting), these actions will be transformed into server requests. Then the system will read or update the data and return the page.
 
 ## Part 1: Database Reading, User Operations and System Responses
 ![](assets/images/5.1.png)
 
-In this part, we used three diagrams to check whether our technical decisions really matched the user tasks. The first table helped us compare each user requirement with the current MVP implementation, so we could see which functions were already supported and which ones were only future ideas. The request flow diagram helped us test whether every main user action had a clear system path, from clicking a button to receiving a page update. The GET / POST diagram was also useful because it forced us to separate reading actions from changing actions. This made our prototype logic clearer and easier to explain.
+In this section, we used three charts to verify whether our technical decisions truly met the user requirements. We compared each user requirement with the current MVP implementation, so that we could determine which functions have been supported and which can be implemented in the future. 
+
+Then we identified whether each major user operation had a clear system path, from clicking a button to receiving page updates. Finally, we distinguished read operations from change operations. This made our prototype logic clearer.
 
 ## Part 2: Deployment, Integration and Future Expansion
 ![](assets/images/5.2.png)
@@ -31,7 +33,11 @@ At this stage, we started to think about security and maintenance after building
 
 ## Personal Reflection
 
-In this blog, I learned that implementation is not only about making functions work once. User actions can repeat, so the database needs rules to protect consistency. INSERT OR IGNORE helped us avoid duplicate save-place and like records. I also learned that routes, controllers, SQL queries, HTMX updates and safety checks all need to work together as one system.
+In this blog, I learned that implementation is not only about making functions work once. User actions can repeat, so the database needs rules to protect consistency. INSERT OR IGNORE helped us avoid duplicate save-place and like records.
+
+### Core design decisions:
+1. We divided user operations into read and modify functions, ensuring that actions such as searching, posting, saving, liking, and commenting all correspond to clear system response paths. 
+2. For the time being, we will not incorporate the map API into the MVP. Instead, we will use location cards and external links to Google Maps to ensure that users can find medical facilities while reducing development costs and technical risks.
 
 ### Division of labor
 Joint discussion and finalization. All charts and codes are jointly created and implemented.

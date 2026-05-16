@@ -10,33 +10,38 @@ tags:
 ---
 ## Course learning gains
 
-In Week 9, I started to understand that database design should come from pages and user flow, not directly from code. From our wireframes, we identified what data the platform needs. This helped me see the database as the system should support user behaviors, can't detached from the interface just be a place to store content.
+In the 9th week, I began to understand that database design should be based on pages and user processes, rather than directly derived from the code. It should be determined through our wireframes and flowcharts. This made me realize that the database is not just a place to store content; it should support user operations and function realization.
 
 ## Part 1: Identifying Data, Initial DDD Data Definitions and ERD
 ![](assets/images/4.1.png)
 
-In this part, we did not start the database design directly from code. We first looked back at our wireframes and user flow, because we needed to understand what data the website actually needs to support user actions. From this process, we divided the data into three types: displayed data, input data, and generated data. Displayed data means the content shown on the page, input data means what users submit or choose, and generated data means the records updated by the system. 
+First, we reviewed our wireframes and user flows, and classified the data into three categories: display data (i.e., the content shown on the page), input data (i.e., the content submitted or selected by the user), and generated data (i.e., the records updated by the system).
 
-With these data needs listed and discussed, we grouped them into nine possible data objects. Then we made a decision to keep Task, Task Step, Place, and Peer Experience Card as the core database objects. We did this because these four objects directly support the main medical help pathway. Finally, we used an ERD to make the relationship between these core entities clearer, so the later database structure would built from the actual user flow and page needs.
+After listing and discussing these data requirements, we classified them into nine possible data objects and clarified the core database structure through an ERD. The main entities of this platform are: tasks, task processes, location selection, and peer experiences.
 
 ## Part 2: Consultation and Iteration
 ![](assets/images/4.2.png)
 
-Once the first Data Dictionary (DDD) and Entity Relationship Diagram (ERD) were completed, we did not directly use them as the final version. We invited a student majoring in computer science to conduct a technical feasibility review on them. The feedback indicated that if each object were transformed into a database table, it would increase the connection routes, models, SQL queries, and templates, making them overly complex. Therefore, we made adjustments to the structure. We retained "task", "task step", "location", and "peer experience" as the core data because they support the main task path. Then, we added new entities ("user", "question", "saved location", "comment", and "like") which can provide a good connection with the core data. This improves the rational operability of the website and enhances community interaction.
+After completing the first Data Dictionary (DDD) and Entity Relationship Diagram (ERD), we did not directly use them as the final version. Instead, we invited a student majoring in computer science to conduct a technical feasibility review of them. The feedback indicated that if each object in the previous DDD was converted into a database table, it would increase the complexity of the connection paths, models, SQL queries, and templates. However, if we only retained the core four entities, it would feel there were no connections between them.
 
 ## Part 3: Final ddd Data Definition Table and ERD Relationship Diagram
 ![](assets/images/4.3.png)
 
-Following the technical feasibility review, we made adjustments and divided the data into core queryable data and supporting/simplified data. The core entities include Task, TaskStep, Place, and PeerExperience. These entities cover task selection, step guidance, location search, and experience reading. The auxiliary entities include User, Question, SavedPlace, ExperienceComment, and ExperienceLike. These entities support login, question posting, location saving, comment reply, and like, thereby enhancing the logic of the core entities.
+After conducting a technical feasibility review, we made adjustments to the structure. For the core queryable data, we retained "task", "task steps", "location" and "peer experience" as the core data, as they support the main task path. Then, we added new entities as auxiliary data ("user", "question", "saved location", "comment" and "like"). This solved the problems of the previous version, and the new entities were also able to establish good connections with the core data. This enhanced the rational operability of the website and strengthened community interaction.
 
 ## Part 4: Database Support Pages and Implementation
 ![](assets/images/4.4.png)
 
-At this Week 9 stage, with the DDD and ERD finished, we organised the database and code screenshots to show how the data plan could support the actual web app. We checked the SQLite tables in DB Browser, then connected the data objects to TypeScript interfaces, CREATE TABLE code, SELECT / JOIN queries, controller logic, and template loops. This helped us show the full path from database to page display. It proves the prototype was moving from planned data structure into a working data-driven web app.
+After completing DDD and ERD, we compiled screenshots of the database and code to demonstrate how the data planning supports the actual network application. We checked the SQLite tables using DB Browser. The file src/models/medical.ts is responsible for translating the data structures determined in DDD and ERD into actual database tables and query logic. The file src/controllers/medical.ts then reads the tasks, peer experiences, comments, and saving locations from the model and passes these contents to the corresponding views. Finally, the file medical/experiences.html.tmpl uses template loops to call the experience-tile local view, displaying the user experiences in the database as post cards on the community page.
 
 ## Personal Reflection
 
-In this blog, I mainly reflected on how our data design became more realistic. Through DDD, ERD and feasibility review, I learned that database design should not start from random tables. It should come from what users see, input and generate on the website. I also learned that every data object needs to support a real page function, route, model, controller and template, otherwise it will only make the MVP harder to build.
+In this blog, I mainly discussed how our data design has become more practical and feasible. Through domain-driven design (DDD), entity relationship diagram (ERD), and feasibility review, I learned that database design should not start with arbitrary tables, but should originate from the content that users see, input and generate on the website. I also learned that each data object needs to support actual page functions, routes, models, controllers and templates.
+
+### Core design decisions:
+1. Starting from the wireframes and user operations, we deduced the core data that the website must store, and retained Task, TaskStep, Place and PeerExperience to support the main task paths.
+
+2. We adjusted the database structure based on the achievable scope of the MVP, so that data, models, controllers and pages could truly be connected, rather than just providing static displays.
 
 ### Division of labor
-Joint discussion and finalization. All charts and codes are jointly created and implemented.
+These decisions were discussed and finalised together. All diagrams and code implementation were created collaboratively.The iteration from Figure 1 to Figure 3 referenced the user's technical feasibility review.
