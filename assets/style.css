@@ -278,7 +278,7 @@ article {
 article p,
 article li {
   color: var(--text);
-  font-size: 2rem;
+  font-size: 1.3rem;
   line-height: 1.85;
 }
 
