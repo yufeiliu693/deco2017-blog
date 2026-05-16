@@ -14,7 +14,7 @@
   --accent-soft: #ead3c4;
   --tag-bg: #f3e4d8;
 
-  --content-width: 780px;
+  --content-width: 1080px;
   --home-width: 980px;
 
   --radius-lg: 28px;
@@ -115,6 +115,7 @@ main {
   border-radius: var(--radius-lg);
   background: rgba(255, 253, 248, 0.96);
   box-shadow: var(--shadow);
+  overflow: visible;
 }
 
 /* Typography */
@@ -313,13 +314,14 @@ article blockquote {
   color: var(--muted);
 }
 
-/* Blog post images: keep original ratio and adapt to article width */
+/* Blog post images: wider responsive display for diagrams and long screenshots */
 article img {
   display: block;
-  width: 100%;
-  max-width: 100%;
+  width: min(92vw, 1180px);
+  max-width: none;
   height: auto;
-  margin: 1.5rem auto;
+  margin: 2rem 50%;
+  transform: translateX(-50%);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--paper-strong);
@@ -382,5 +384,10 @@ hr {
   h1 {
     font-size: clamp(2.1rem, 12vw, 3.5rem);
   }
-  
+
+  article img {
+    width: calc(100vw - 1rem);
+    margin: 1.5rem 50%;
+    transform: translateX(-50%);
+  }
 }
