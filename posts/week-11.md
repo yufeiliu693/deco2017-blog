@@ -15,6 +15,7 @@ tags:
 In Week 11, I learned that finishing the prototype does not mean the system is already successful. We still need to check whether it works technically and whether real users can complete the task without confusion. For Sydney Life Aid, this means testing routes, database actions and HTMX updates, but also watching users through task-based testing and Think Aloud. I also realised testing and analytics should help us improve the task pathway, also we need protecting users’ privacy.
 
 ### Part Two: Final Function Selection and Implementation
+
 ![](assets/images/6.1.png)
 
 In this section, we reviewed what should be retained in the final Minimum Viable Product (MVP) and what should be moved to the future expansion scope. We made this decision because the prototype needs to be testable and cannot have too many functions. We placed features such as automatic recommendations, complex notifications, and multilingual translation in the future scope. The screenshots show the current prototype being used, and we can now apply it for user testing.
