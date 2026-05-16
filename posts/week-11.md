@@ -8,24 +8,22 @@ tags:
   - MVP Evaluation
   - Iteration
 ---
-# Evaluation of applications - Test analysis and summary
-
-## Classroom Learning and Gains
+## Course learning gains
 
 In Week 11, I learned that finishing the prototype does not mean the system is already successful. We still need to check whether it works technically and whether real users can complete the task without confusion. For Sydney Life Aid, this means testing routes, database actions and HTMX updates, but also watching users through task-based testing and Think Aloud. I also realised testing and analytics should help us improve the task pathway, also we need protecting users’ privacy.
 
-## Part Two: Final Function Selection and Implementation
+## Part 1: Final Function Selection and Implementation
 
 ![](assets/images/6.1.png)
 
 In this section, we reviewed what should be retained in the final Minimum Viable Product (MVP) and what should be moved to the future expansion scope. We made this decision because the prototype needs to be testable and cannot have too many functions. We placed features such as automatic recommendations, complex notifications, and multilingual translation in the future scope. The screenshots show the current prototype being used, and we can now apply it for user testing.
 
-## Part Three: Evaluation Plan and Test Scope
+## Part 2: Evaluation Plan and Test Scope
 ![](assets/images/6.2.png)
 
 In this part, we planned how to test the prototype before treating it as finished. We divided the evaluation into several areas: core task flow, content clarity, interaction functions, database integrity, HTMX partial updates, accessibility, safety, and future scope. We did this because the website needs to be tested from both user and system sides. Users should be able to understand the task, find places, read posts, publish content, and return to settings without confusion. At the same time, login, search, save, like, comment, database records, and page updates must work reliably. This plan helps us find problems, and decide what to adjust next.
 
-## Part Four: Classroom Test Feedback and Revision Directions
+## Part 3: Classroom Test Feedback and Revision Directions
 
 In the classroom test, we invited other group members to conduct "think aloud" and also had the tutor perform a functional test. The overall feedback was that the website direction, page content and functional logic were basically clear, and users could understand that this was a platform that helps Chinese international students find medical assistance and view their peers' experiences in Sydney.
 
