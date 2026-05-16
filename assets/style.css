@@ -14,7 +14,7 @@
   --accent-soft: #ead3c4;
   --tag-bg: #f3e4d8;
 
-  --content-width: 1080px;
+  --content-width: 1180px;
   --home-width: 980px;
 
   --radius-lg: 28px;
@@ -107,6 +107,7 @@ main {
   box-shadow: var(--shadow);
 }
 
+/* Main article container */
 .post-shell {
   width: min(var(--content-width), calc(100vw - 2rem));
   margin: 0 auto;
@@ -314,7 +315,7 @@ article blockquote {
   color: var(--muted);
 }
 
-/* Blog post images: responsive inside the article box */
+/* Blog post images: stay inside the white article container */
 article img {
   display: block;
   width: 100%;
@@ -325,6 +326,16 @@ article img {
   border-radius: var(--radius-md);
   background: var(--paper-strong);
   box-shadow: 0 12px 30px rgba(90, 57, 43, 0.08);
+}
+
+/* Avoid oversized iframe / media overflow */
+article iframe,
+article video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 1.8rem auto;
+  border-radius: var(--radius-md);
 }
 
 hr {
@@ -378,6 +389,7 @@ hr {
   .post-hero,
   .post-shell {
     width: min(100%, calc(100vw - 1rem));
+    padding: 1rem;
   }
 
   h1 {
