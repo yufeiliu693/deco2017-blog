@@ -50,17 +50,6 @@ However, this test also made me realize that a high automated accessibility scor
   <img src="assets/images/7.8.png" alt="Week 13 evidence image">
 </div>
 
-<div class="week13-image-scroll">
-  <img src="assets/images/7.11.png" alt="Week 13 evidence image">
-</div>
-
-<div class="week13-image-scroll">
-  <img src="assets/images/7.10.png" alt="Week 13 evidence image">
-</div>
-
-<div class="week13-image-scroll">
-  <img src="assets/images/7.12.png" alt="Week 13 evidence image">
-</div>
 
 ## Functional Requirements Reflection
 
@@ -73,9 +62,6 @@ At the same time, we have consciously redefined some functions. For instance, th
 
 <div class="week13-image-scroll">
   <img src="assets/images/7.13.png" alt="Week 13 evidence image">
-</div>
-<div class="week13-image-scroll">
-  <img src="assets/images/7.14.png" alt="Week 13 evidence image">
 </div>
 
 ## Lessons Learned and Future Improvements
