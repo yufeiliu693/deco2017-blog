@@ -320,10 +320,9 @@ article blockquote {
 article img {
   display: block;
   width: 100%;
-  max-width: 720px;
-  max-height: 420px;
+  max-width: 100%;
   height: auto;
-  margin: 1.6rem auto;
+  margin: 1.8rem auto;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--paper-strong);
@@ -400,8 +399,7 @@ hr {
 
   article img {
     width: 100%;
-    max-width: 720px;
-    max-height: 420px;
+    max-width: 100%;
     height: auto;
     margin: 1.5rem auto;
   }
