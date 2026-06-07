@@ -34,15 +34,6 @@ The Open-Meteo Weather API was placed in the service layer and passed by the con
   <img src="assets/images/7.5.png" alt="Week 13 evidence image">
 </div>
 
-<div class="week13-image-scroll">
-  <img src="assets/images/7.6.png" alt="Week 13 evidence image">
-</div>
-
-<div class="week13-image-scroll">
-  <img src="assets/images/7.7.png" alt="Week 13 evidence image">
-</div>
-
-
 ## User Experience and Accessibility
 
 The user experience assessment is the most conclusive way to determine whether Sydney Life Aid has truly solved the problem. Our test subjects were three Chinese international students or people familiar with the life of international students. The testing methods included scenario-based testing, task-based usability testing, Think Aloud, and post-test interviews. The test scenarios were: the user was unwell in Sydney and needed to learn through the website how to see a doctor, where to go, what to prepare, and whether other students had similar experiences. 
