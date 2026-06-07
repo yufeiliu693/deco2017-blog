@@ -51,7 +51,7 @@ However, testing also revealed usability problems. Rebecca felt the Login page d
 ![](assets/images/7.10.png)
 ![](assets/images/7.11.png)
 
-In terms of accessibility, the prototype passed all key checks, including Lighthouse, contrast, keyboard navigation, focus status, form labels, image alt text, screen reader, and semantic HTML. Lighthouse reported no serious accessibility errors, contrast met readability requirements, keyboard navigation and focus states worked correctly, and the main forms had clear labels. Also the semantic elements such as header, nav, main, section, form, and button supported clearer navigation.
+In accessibility testing, the prototype passed Lighthouse, contrast, keyboard navigation, focus status, form labels, image alt text, screen reader and semantic HTML checks. Lighthouse found no errors, contrast met readability requirements, keyboard and focus states worked correctly, forms had clear labels, and semantic elements supported clearer navigation.
 
 ![](assets/images/7.12.png)
 
@@ -81,7 +81,7 @@ I also learned that form functionality is part of user experience. Image preview
 
 Future work should redesign the Login page, enlarge the Google Maps button, visualise the task steps, add upload compression and loading states, and retest performance in a real deployed environment.
 
-The ultimate value of Sydney Life Aid lies not in the number of functions it contains, but in the way it organizes an originally vague, anxious and scattered medical assistance process into a web system that can be completed step by step. It has accomplished its core task, but the tests have also reminded me that a truly excellent web application is not just something that can run; it must also make the next step clear, trustworthy and actionable when the user needs help the most.
+The value of Sydney Life Aid is not the number of functions, but how it turns a vague and stressful medical process into a step-by-step web system. It completed the core task, but the evaluation reminded me that a good web app must make the next step clear, trustworthy and actionable.
 
 ## Additional Evidence: AI Support and Testing Process
 
