@@ -14,12 +14,11 @@ tags:
 
 Sydney Life Aid is a task-oriented community hub built around the real-life task "See a doctor in Sydney". Its target users are Chinese international students who feel uncertain about GP, pharmacy, emergency, OSHC and appointment processes. Built with Mojo.js, TypeScript, SQLite, HTMX and an MVC structure, Through pages such as Home/Task, Address, Community, Post Detail, Release, Settings/Profile, it connects "understanding the process, finding the location, reading experiences, interacting and saving, and returning to personal content" into a complete path. 
 
+This reflection evaluates whether the system is stable, usable, accessible, and whether our initial functional requirements were realistic.
+
 <div class="week13-image-scroll">
   <img src="assets/images/7.3.png" alt="Week 13 evidence image">
 </div>
-
-This reflection evaluates whether the system is stable, usable, accessible, and whether our initial functional requirements were realistic.
-
 
 ## Performance and Technical Behaviour
 
@@ -27,17 +26,17 @@ From the perspective of technical behavior, Sydney Life Aid performed reliably i
 
 More importantly, we do not merely judge the success of the project based on the "page being able to open". We also tested code quality and technical behaviour through npm run lint, npm run check and npm run test. tests/model.test.mjs checked user, task, post, comment, like, saved place and permission logic, while tests/routes.test.mjs checked whether the main page routes and action routes were registered correctly. This means stability was checked at both model and route levels, not only through manual clicking.
 
+HTMX is a key technology that affects performance and interaction quality. Operations such as Like/Unlike, Comment, Reply and Save/Unsave Place can update through partial refresh instead of full-page reloads, making Community, Post Detail and Address feel lighter. Release and Comment forms were also tested with empty or incomplete input. The system did not crash, prompts appeared when needed, and empty data was not saved incorrectly, showing basic error prevention.
+
+The Open-Meteo Weather API was placed in the service layer and passed by the controller to the Address page. This avoided mixing API logic directly into templates and allowed the page to remain usable even if API data temporarily failed. However, the performance evaluation was still limited because Network loading checks were mainly local. They showed no obvious waiting or resource failure, but did not fully represent slow networks, multiple users or server pressure in a real deployed environment. Image upload also needs future optimisation. The Release page supports preview, file type restriction, 2MB file size limit and maximum 9 images, but future versions should add compression, loading states and clearer upload feedback.
+
 <div class="week13-image-scroll">
   <img src="assets/images/7.5.png" alt="Week 13 evidence image">
 </div>
 
-HTMX is a key technology that affects performance and interaction quality. Operations such as Like/Unlike, Comment, Reply and Save/Unsave Place can update through partial refresh instead of full-page reloads, making Community, Post Detail and Address feel lighter. Release and Comment forms were also tested with empty or incomplete input. The system did not crash, prompts appeared when needed, and empty data was not saved incorrectly, showing basic error prevention.
-
 <div class="week13-image-scroll">
   <img src="assets/images/7.6.png" alt="Week 13 evidence image">
 </div>
-
-The Open-Meteo Weather API was placed in the service layer and passed by the controller to the Address page. This avoided mixing API logic directly into templates and allowed the page to remain usable even if API data temporarily failed. However, the performance evaluation was still limited because Network loading checks were mainly local. They showed no obvious waiting or resource failure, but did not fully represent slow networks, multiple users or server pressure in a real deployed environment. Image upload also needs future optimisation. The Release page supports preview, file type restriction, 2MB file size limit and maximum 9 images, but future versions should add compression, loading states and clearer upload feedback.
 
 <div class="week13-image-scroll">
   <img src="assets/images/7.7.png" alt="Week 13 evidence image">
@@ -48,33 +47,38 @@ The Open-Meteo Weather API was placed in the service layer and passed by the con
 
 The user experience assessment is the most conclusive way to determine whether Sydney Life Aid has truly solved the problem. Our test subjects were three Chinese international students or people familiar with the life of international students. The testing methods included scenario-based testing, task-based usability testing, Think Aloud, and post-test interviews. The test scenarios were: the user was unwell in Sydney and needed to learn through the website how to see a doctor, where to go, what to prepare, and whether other students had similar experiences. 
 
+The test results show that all three users were able to understand that this is a platform that helps international students see a doctor in Sydney, and they were also able to complete the core path of "Home → Address → Community". Home / Task, Address, Community and Settings / Profile together supported the full path from understanding the process to finding places, reading peer experiences and returning to saved personal content.
+
+However, testing also revealed usability problems. Rebecca felt the Login page did not clearly show the website theme, so users might not understand the platform value before entering. YD found the Google Maps button not prominent enough, showing that key action buttons need stronger visual hierarchy. WQ felt there was too much text, which made reading burdensome. These issues are not small visual preferences; they affect whether users can act quickly when they are stressed, unwell or unfamiliar with the medical system. They also show that we prioritised complete information but did not compress or layer it enough.
+
+In accessibility testing, the prototype passed Lighthouse, contrast, keyboard navigation, focus status, form labels, image alt text, screen reader and semantic HTML checks. Lighthouse found no errors, contrast met readability requirements, keyboard and focus states worked correctly, forms had clear labels, and semantic elements supported clearer navigation.
+
+However, this test also made me realize that a high automated accessibility score does not necessarily mean a completely effortless real experience. WQ mentioned that "too much text" is actually a cognitive accessibility issue. For the target users, the medical process itself is already complex, and the interface should not add an additional burden on understanding. Therefore, the next step is not only to continue maintaining technical accessibility, but also to reduce the text density, using icons, step images, short labels, and progressive disclosure to help users quickly find the next step.
+
 <div class="week13-image-scroll">
   <img src="assets/images/7.8.png" alt="Week 13 evidence image">
 </div>
-
-The test results show that all three users were able to understand that this is a platform that helps international students see a doctor in Sydney, and they were also able to complete the core path of "Home → Address → Community". Home / Task, Address, Community and Settings / Profile together supported the full path from understanding the process to finding places, reading peer experiences and returning to saved personal content.
 
 <div class="week13-image-scroll">
   <img src="assets/images/7.11.png" alt="Week 13 evidence image">
 </div>
 
-However, testing also revealed usability problems. Rebecca felt the Login page did not clearly show the website theme, so users might not understand the platform value before entering. YD found the Google Maps button not prominent enough, showing that key action buttons need stronger visual hierarchy. WQ felt there was too much text, which made reading burdensome. These issues are not small visual preferences; they affect whether users can act quickly when they are stressed, unwell or unfamiliar with the medical system. They also show that we prioritised complete information but did not compress or layer it enough.
-
 <div class="week13-image-scroll">
   <img src="assets/images/7.10.png" alt="Week 13 evidence image">
 </div>
-
-In accessibility testing, the prototype passed Lighthouse, contrast, keyboard navigation, focus status, form labels, image alt text, screen reader and semantic HTML checks. Lighthouse found no errors, contrast met readability requirements, keyboard and focus states worked correctly, forms had clear labels, and semantic elements supported clearer navigation.
 
 <div class="week13-image-scroll">
   <img src="assets/images/7.12.png" alt="Week 13 evidence image">
 </div>
 
-However, this test also made me realize that a high automated accessibility score does not necessarily mean a completely effortless real experience. WQ mentioned that "too much text" is actually a cognitive accessibility issue. For the target users, the medical process itself is already complex, and the interface should not add an additional burden on understanding. Therefore, the next step is not only to continue maintaining technical accessibility, but also to reduce the text density, using icons, step images, short labels, and progressive disclosure to help users quickly find the next step.
-
 ## Functional Requirements Reflection
 
 Looking back at the initial functional requirements, I believe that the project has fulfilled the most crucial requirements overall, and the scope control is clearer than in the early stage. The core requirement is not to create a medical community with many functions, but to help users complete the task of "See a doctor in Sydney". The final prototype kept the core functions: task pathway, place information, peer experiences, Post Detail interaction, Release publishing, saved places, likes, comments, replies, profile management, language switching, weather information and responsive layout.
+
+These functions are not isolated from each other. task_steps connects Home pathway cards, Community filters, Release step selector, post cards and peer_experiences.step_id. places connect Address page, Post Detail page and saved_places. peer_experiences links user experiences, locations, comments, likes and saving behaviors. This data structure makes the website not a "stack of pages", but a system built around a real task. 
+
+
+At the same time, we have consciously redefined some functions. For instance, the project did not incorporate the complete Map API but instead initially used place cards and Google Maps external links; it did not include real-time chat, notifications, user levels, or complex recommendation systems. This is not a failure but a matter of scope determination. If too many functions are pursued within a limited time, the core process may become unstable. Ultimately, we prioritized ensuring that users can understand the process, find locations, read experiences, save information, and post content.
 
 <div class="week13-image-scroll">
   <img src="assets/images/7.13.png" alt="Week 13 evidence image">
@@ -82,11 +86,6 @@ Looking back at the initial functional requirements, I believe that the project 
 <div class="week13-image-scroll">
   <img src="assets/images/7.14.png" alt="Week 13 evidence image">
 </div>
-
-These functions are not isolated from each other. task_steps connects Home pathway cards, Community filters, Release step selector, post cards and peer_experiences.step_id. places connect Address page, Post Detail page and saved_places. peer_experiences links user experiences, locations, comments, likes and saving behaviors. This data structure makes the website not a "stack of pages", but a system built around a real task. 
-
-
-At the same time, we have consciously redefined some functions. For instance, the project did not incorporate the complete Map API but instead initially used place cards and Google Maps external links; it did not include real-time chat, notifications, user levels, or complex recommendation systems. This is not a failure but a matter of scope determination. If too many functions are pursued within a limited time, the core process may become unstable. Ultimately, we prioritized ensuring that users can understand the process, find locations, read experiences, save information, and post content.
 
 ## Lessons Learned and Future Improvements
 
