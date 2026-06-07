@@ -23,8 +23,6 @@ This reflection evaluates whether the system is stable, usable, accessible, and 
 
 From the perspective of technical behavior, Sydney Life Aid performed reliably in the basic running and testing process. The project passed npm install, npm run seed, npm run dev, local opening and navigation checking, with no obvious 404 or 500 route errors. This showed that the main pages and routes were connected correctly, rather than only appearing complete at interface level.
 
-![](assets/images/7.4.png)
-
 More importantly, we do not merely judge the success of the project based on the "page being able to open". We also tested code quality and technical behaviour through npm run lint, npm run check and npm run test. tests/model.test.mjs checked user, task, post, comment, like, saved place and permission logic, while tests/routes.test.mjs checked whether the main page routes and action routes were registered correctly. This means stability was checked at both model and route levels, not only through manual clicking.
 
 ![](assets/images/7.5.png)
@@ -46,10 +44,11 @@ The user experience assessment is the most conclusive way to determine whether S
 
 The test results show that all three users were able to understand that this is a platform that helps international students see a doctor in Sydney, and they were also able to complete the core path of "Home → Address → Community". Home / Task, Address, Community and Settings / Profile together supported the full path from understanding the process to finding places, reading peer experiences and returning to saved personal content.
 
+![](assets/images/7.11.png)
+
 However, testing also revealed usability problems. Rebecca felt the Login page did not clearly show the website theme, so users might not understand the platform value before entering. YD found the Google Maps button not prominent enough, showing that key action buttons need stronger visual hierarchy. WQ felt there was too much text, which made reading burdensome. These issues are not small visual preferences; they affect whether users can act quickly when they are stressed, unwell or unfamiliar with the medical system. They also show that we prioritised complete information but did not compress or layer it enough.
 
 ![](assets/images/7.10.png)
-![](assets/images/7.11.png)
 
 In accessibility testing, the prototype passed Lighthouse, contrast, keyboard navigation, focus status, form labels, image alt text, screen reader and semantic HTML checks. Lighthouse found no errors, contrast met readability requirements, keyboard and focus states worked correctly, forms had clear labels, and semantic elements supported clearer navigation.
 
@@ -66,12 +65,8 @@ Looking back at the initial functional requirements, I believe that the project 
 
 These functions are not isolated from each other. task_steps connects Home pathway cards, Community filters, Release step selector, post cards and peer_experiences.step_id. places connect Address page, Post Detail page and saved_places. peer_experiences links user experiences, locations, comments, likes and saving behaviors. This data structure makes the website not a "stack of pages", but a system built around a real task. 
 
-![](assets/images/7.3.png)
 
 At the same time, we have consciously redefined some functions. For instance, the project did not incorporate the complete Map API but instead initially used place cards and Google Maps external links; it did not include real-time chat, notifications, user levels, or complex recommendation systems. This is not a failure but a matter of scope determination. If too many functions are pursued within a limited time, the core process may become unstable. Ultimately, we prioritized ensuring that users can understand the process, find locations, read experiences, save information, and post content.
-
-![](assets/images/7.1.png)
-![](assets/images/7.2.png)
 
 ## Lessons Learned and Future Improvements
 
