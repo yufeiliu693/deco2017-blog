@@ -21,7 +21,7 @@ This reflection evaluates whether the system is stable, usable, accessible, and 
 
 ## Performance and Technical Behaviour
 
-From the perspective of technical behavior, Sydney Life Aid performed reliably in the basic running and testing process. The project passed npm install, npm run seed, npm run dev, local opening, normally accessible at http://localhost:3000. And navigation checking, with no obvious 404 or 500 route errors. This showed that the main pages and routes were connected correctly, rather than only appearing complete at interface level.
+From the perspective of technical behavior, Sydney Life Aid performed reliably in the basic running and testing process. The project passed npm install, npm run seed, npm run dev, local opening and navigation checking, with no obvious 404 or 500 route errors. This showed that the main pages and routes were connected correctly, rather than only appearing complete at interface level.
 
 ![](assets/images/7.4.png)
 
