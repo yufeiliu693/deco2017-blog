@@ -1,12 +1,12 @@
 ---
-title: Post Title
-date: 2026-02-14
-author: Your Name
-summary: Short description
+title: Sydney Life Aid Evaluation & Reflection
+date: 2026-06-07
+author: Yufei Liu
+summary: A final reflection on the performance, user experience, accessibility, functional requirements, and future improvements of the Sydney Life Aid web application.
 tags:
-  - tag1
-  - tag2
-  - tag3
+  - Web App Evaluation
+  - User Experience Testing
+  - AI testing
 ---
 # Final Reflection: Evaluating Sydney Life Aid
 
@@ -46,8 +46,6 @@ The user experience assessment is the most conclusive way to determine whether S
 
 The test results show that all three users were able to understand that this is a platform that helps international students see a doctor in Sydney, and they were also able to complete the core path of "Home → Address → Community". Home / Task, Address, Community and Settings / Profile together supported the full path from understanding the process to finding places, reading peer experiences and returning to saved personal content.
 
-![](assets/images/7.9.png)
-
 However, testing also revealed usability problems. Rebecca felt the Login page did not clearly show the website theme, so users might not understand the platform value before entering. YD found the Google Maps button not prominent enough, showing that key action buttons need stronger visual hierarchy. WQ felt there was too much text, which made reading burdensome. These issues are not small visual preferences; they affect whether users can act quickly when they are stressed, unwell or unfamiliar with the medical system. They also show that we prioritised complete information but did not compress or layer it enough.
 
 ![](assets/images/7.10.png)
@@ -85,3 +83,9 @@ Future work should redesign the Login page, enlarge the Google Maps button, visu
 
 The ultimate value of Sydney Life Aid lies not in the number of functions it contains, but in the way it organizes an originally vague, anxious and scattered medical assistance process into a web system that can be completed step by step. It has accomplished its core task, but the tests have also reminded me that a truly excellent web application is not just something that can run; it must also make the next step clear, trustworthy and actionable when the user needs help the most.
 
+## Additional Evidence: AI Support and Testing Process
+
+These two files provide supporting evidence for my final reflection: one records AI support during development and testing, and the other documents the full testing process.
+
+- [AI Support and Prototype Testing Evidence](https://drive.google.com/file/d/1ltcNttOS24i8r1Vs5I15XodBI5PUE8X2/view?usp=sharing)
+- [Full Testing Process Evidence](https://drive.google.com/file/d/1P6m1wfXkBVDK7yd4KSP_ShjShsZDdbvj/view?usp=sharing)
