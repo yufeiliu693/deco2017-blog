@@ -404,3 +404,32 @@ hr {
     margin: 1.5rem auto;
   }
 }
+/* Week 13 only: keep long evidence images readable inside a fixed-height scroll frame */
+.week13-image-scroll {
+  width: 100%;
+  aspect-ratio: 2786 / 1650;
+  margin: 1.8rem auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--paper-strong);
+  box-shadow: 0 12px 30px rgba(90, 57, 43, 0.08);
+}
+
+.week13-image-scroll img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 760px) {
+  .week13-image-scroll {
+    margin: 1.5rem auto;
+  }
+}
