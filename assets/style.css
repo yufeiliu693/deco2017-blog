@@ -317,33 +317,17 @@ article blockquote {
 }
 
 /* Blog post images: stay inside the white article container */
-/* Image frame for blog evidence screenshots */
-article p:has(> img) {
-  width: min(100%, 560px);
-  height: 360px;
-  margin: 1.4rem auto;
-  padding: 0.8rem;
+article img {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  max-height: 420px;
+  height: auto;
+  margin: 1.6rem auto;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--paper-strong);
-  box-shadow: 0 8px 22px rgba(90, 57, 43, 0.07);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-article p:has(> img) img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border: none;
-  border-radius: 12px;
-  background: transparent;
-  box-shadow: none;
-  margin: 0;
+  box-shadow: 0 12px 30px rgba(90, 57, 43, 0.08);
 }
 
 /* Avoid oversized iframe / media overflow */
@@ -414,18 +398,11 @@ hr {
     font-size: clamp(2.1rem, 12vw, 3.5rem);
   }
 
-  article p:has(> img) {
+  article img {
     width: 100%;
-    height: 280px;
-    padding: 0.6rem;
-    margin: 1.2rem auto;
-  }
-
-  article p:has(> img) img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
+    max-width: 720px;
+    max-height: 420px;
     height: auto;
-    object-fit: contain;
+    margin: 1.5rem auto;
   }
 }
